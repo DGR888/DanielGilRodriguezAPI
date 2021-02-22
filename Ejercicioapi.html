@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dime el tiempo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="js/Ejercicioapi.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+
+  
+    <nav class="navbar navbar-light bg-light col-10 ">
+        <a class="navbar-brand" href="#">
+          <img src="/images/logoifp.png" alt="logoifp">
+        </a>
+      </nav>
+    </div>
+    <div class="container">
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="validationServer01" value="" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        
+       
+        <div class="col-md-6">
+          <label for="validationServer03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control " id="validationServer03" aria-describedby="validationServer03Feedback" required>
+          <div id="validationServer03Feedback" class="invalid-feedback">
+            Por favor, escriba su ciudad
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationServer04" class="form-label">País</label>
+          <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Escoge</option>
+            <option value="">España</option>
+            <option value="">EEUU</option>
+            <option value="">Ucrania</option>
+            <option value="">Francia</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Por favor, selecciona un país
+          </div>
+        </div>
+        
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Dime el tiempo</button>
+        </div>
+      </form>
+      <div id="weather">
+        <div id="description"></div>
+        <h1 id="temp"></h1>
+        <div id="location"></div>
+      </div>
+    </div>
+</body>
+</html>
